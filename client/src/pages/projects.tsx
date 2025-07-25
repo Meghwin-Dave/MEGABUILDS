@@ -6,7 +6,7 @@ import { Filter } from "lucide-react";
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
-
+  
   // Static project data for each tech stack combination
   const projects = [
     // AI + N8N
