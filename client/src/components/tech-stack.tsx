@@ -2,12 +2,16 @@ export default function TechStack() {
   const techStack = [
     { name: "Python", icon: "fab fa-python", color: "text-blue-400", level: "EXPERT" },
     { name: "JavaScript", icon: "fab fa-js-square", color: "text-yellow-400", level: "ADVANCED" },
+    { name: "React.js", icon: "fab fa-react", color: "text-blue-500", level: "EXPERT" },
+    { name: "Next.js", icon: "fab fa-react", color: "text-gray-200", level: "ADVANCED" },
+    { name: "Tailwind CSS", icon: "fas fa-paint-brush", color: "text-teal-400", level: "EXPERT" },
+    { name: "N8N", icon: "fas fa-network-wired", color: "text-orange-400", level: "EXPERT" },
+    { name: "OpenAI", icon: "fas fa-robot", color: "text-purple-400", level: "ADVANCED" },
+    { name: "LangChain", icon: "fas fa-link", color: "text-green-400", level: "INTERMEDIATE" },
     { name: "PostgreSQL", icon: "fas fa-database", color: "text-green-400", level: "EXPERT" },
-    { name: "Git", icon: "fab fa-git-alt", color: "text-orange-400", level: "EXPERT" },
     { name: "Docker", icon: "fab fa-docker", color: "text-blue-500", level: "ADVANCED" },
-    { name: "Django", icon: "fas fa-cogs", color: "text-purple-400", level: "EXPERT" },
-    { name: "DevOps", icon: "fas fa-cloud", color: "text-cyan-400", level: "ADVANCED" },
-    { name: "ERPNext", icon: "fas fa-project-diagram", color: "text-pink-400", level: "EXPERT" },
+    { name: "Git", icon: "fab fa-git-alt", color: "text-orange-400", level: "EXPERT" },
+    { name: "Figma", icon: "fab fa-figma", color: "text-pink-400", level: "INTERMEDIATE" },
   ];
 
   return (
@@ -19,45 +23,50 @@ export default function TechStack() {
           backgroundSize: '60px 60px'
         }}></div>
       </div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-4 py-2 terminal-border rounded-lg bg-dark-tertiary font-mono text-sm text-matrix-green">
-            <span className="text-neon-cyan">system.load</span>(<span className="text-yellow-400">"elite_arsenal"</span>);
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Elite Tech <span className="text-transparent bg-clip-text tech-gradient">Arsenal</span>
+            My <span className="text-transparent bg-clip-text tech-gradient">Tech Arsenal</span>
           </h2>
-          <p className="text-gray-400 font-mono">Advanced tools for enterprise-grade solutions</p>
+          <p className="text-gray-400 font-mono">A blend of code, automation, and design</p>
         </div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
-          {techStack.map((tech, index) => (
-            <div 
-              key={tech.name}
-              className="neumorphism p-6 rounded-xl text-center group hover:cyber-glow transition-all duration-500 transform hover:scale-110 hover:-translate-y-2"
-              style={{animationDelay: `${index * 0.1}s`}}
-              data-testid={`tech-${tech.name.toLowerCase()}`}
-            >
-              <div className="relative">
-                <i className={`${tech.icon} text-4xl ${tech.color} mb-3 group-hover:animate-pulse-glow transition-all duration-300`}></i>
-                <div className="absolute -top-2 -right-2 w-3 h-3 bg-matrix-green rounded-full animate-pulse group-hover:bg-electric-blue"></div>
-              </div>
-              <div className="text-sm font-mono text-white mb-2 group-hover:text-electric-blue transition-colors">{tech.name}</div>
-              <div className={`text-xs font-mono uppercase tracking-wider ${tech.level === 'EXPERT' ? 'text-matrix-green' : 'text-warning-orange'}`}>
-                {tech.level}
-              </div>
-              <div className="w-full h-1 bg-gradient-to-r from-transparent via-electric-blue to-transparent mt-2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            </div>
-          ))}
+        {/* Grouped Tech Stacks */}
+        <div className="space-y-8">
+          {/* Frontend Mastery */}
+          <div className="glassmorphism p-6 rounded-xl">
+            <div className="flex items-center mb-2 text-2xl font-bold"><span role="img" aria-label="frontend" className="mr-2">🚀</span>FRONTEND MASTERY</div>
+            <div className="text-lg text-gray-200 font-mono">React.js - <span className="text-matrix-green">EXPERT</span> | Next.js - <span className="text-warning-orange">ADVANCED</span> | Tailwind CSS - <span className="text-matrix-green">EXPERT</span></div>
+          </div>
+          {/* Backend Power */}
+          <div className="glassmorphism p-6 rounded-xl">
+            <div className="flex items-center mb-2 text-2xl font-bold"><span role="img" aria-label="backend" className="mr-2">🔧</span>BACKEND POWER</div>
+            <div className="text-lg text-gray-200 font-mono">Python - <span className="text-matrix-green">EXPERT</span> | PostgreSQL - <span className="text-matrix-green">EXPERT</span> | Docker - <span className="text-warning-orange">ADVANCED</span></div>
+          </div>
+          {/* AI & Automation */}
+          <div className="glassmorphism p-6 rounded-xl">
+            <div className="flex items-center mb-2 text-2xl font-bold"><span role="img" aria-label="ai" className="mr-2">🤖</span>AI & AUTOMATION</div>
+            <div className="text-lg text-gray-200 font-mono">OpenAI - <span className="text-warning-orange">ADVANCED</span> | N8N - <span className="text-matrix-green">EXPERT</span> | Langchain - <span className="text-warning-orange">INTERMEDIATE</span></div>
+          </div>
+          {/* ERP & Frappe */}
+          <div className="glassmorphism p-6 rounded-xl">
+            <div className="flex items-center mb-2 text-2xl font-bold"><span role="img" aria-label="erp" className="mr-2">🏢</span>ERPNEXT & FRAPPE</div>
+            <div className="text-lg text-gray-200 font-mono">ERPNext - <span className="text-matrix-green">EXPERT</span> | Frappe - <span className="text-matrix-green">EXPERT</span></div>
+          </div>
+          {/* Design & Tools */}
+          <div className="glassmorphism p-6 rounded-xl">
+            <div className="flex items-center mb-2 text-2xl font-bold"><span role="img" aria-label="design" className="mr-2">🎨</span>DESIGN & TOOLS</div>
+            <div className="text-lg text-gray-200 font-mono">Figma - <span className="text-warning-orange">INTERMEDIATE</span> | Git - <span className="text-matrix-green">EXPERT</span></div>
+          </div>
         </div>
-        
-        {/* Command line style footer */}
+        {/* Achievement Badges */}
         <div className="mt-16 text-center">
-          <div className="inline-block glassmorphism p-4 rounded-lg font-mono text-sm">
-            <span className="text-matrix-green">$</span> <span className="text-white">deployment.status</span> 
-            <span className="text-neon-cyan"> --production</span>
-            <span className="text-gray-400 ml-4">█</span>
+          <h3 className="text-2xl font-bold mb-6">Achievement Badges</h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            <div className="inline-flex items-center glassmorphism px-4 py-2 rounded-lg font-mono text-lg"><span className="mr-2">🏆</span>5+ Years Python</div>
+            <div className="inline-flex items-center glassmorphism px-4 py-2 rounded-lg font-mono text-lg"><span className="mr-2">⚡</span>100+ React Components</div>
+            <div className="inline-flex items-center glassmorphism px-4 py-2 rounded-lg font-mono text-lg"><span className="mr-2">🚀</span>50+ N8N Workflows</div>
+            <div className="inline-flex items-center glassmorphism px-4 py-2 rounded-lg font-mono text-lg"><span className="mr-2">📊</span>20+ Database Designs</div>
+            <div className="inline-flex items-center glassmorphism px-4 py-2 rounded-lg font-mono text-lg"><span className="mr-2">🏢</span>ERPNext/Frappe: 6+ Domains, 10+ Custom Apps</div>
           </div>
         </div>
       </div>

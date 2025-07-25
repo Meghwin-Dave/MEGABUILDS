@@ -31,29 +31,35 @@ export default function HeroSection() {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" data-testid="hero-title">
-            <span className="block">Build </span>
-            <span className="text-transparent bg-clip-text tech-gradient animate-pulse-glow">Elite Software</span>
-            <br />
-            <span className="block mt-4">Solutions That </span>
-            <span className="text-neon-purple cyber-glow">Transform Business</span>
+            <span className="block">From Concept to Launch</span>
+            <span className="block text-transparent bg-clip-text tech-gradient animate-pulse-glow mb-4">Bringing Your Digital Vision to Life</span>
+            <span className="block mt-4 text-3xl text-neon-purple">through</span>
+            <span className="block text-4xl text-neon-cyan font-bold">AI-Enhanced Development & Automation</span>
           </h1>
-          
+          {/* Add extra margin below headline to prevent overlap */}
+          <div className="mb-10"></div>
           <div className="glassmorphism p-6 rounded-2xl mb-8 max-w-4xl mx-auto">
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed" data-testid="hero-subtitle">
-              I'm <span className="text-electric-blue font-bold cyber-glow">Meghwin Dave</span> — an Elite Software Architect & Tech Project Manager. 
-              <br className="hidden md:block" />
-              I architect, code, and deliver enterprise-grade solutions across ERP systems, SaaS platforms, APIs, and intelligent automation tools.
+            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed text-center mb-4" data-testid="hero-subtitle">
+              Every project powered by:
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
+              <div className="flex items-center gap-2"><span role="img" aria-label="AI">🧠</span> <span>Smart AI Logic</span></div>
+              <div className="flex items-center gap-2"><span role="img" aria-label="Automation">🔄</span> <span>Automated Workflows</span></div>
+              <div className="flex items-center gap-2"><span role="img" aria-label="Web Tech">💻</span> <span>Modern Web Tech</span></div>
+              <div className="flex items-center gap-2"><span role="img" aria-label="Architecture">🏗️</span> <span>Solid Architecture</span></div>
+              <div className="flex items-center gap-2"><span role="img" aria-label="Business">📈</span> <span>Business Systems</span></div>
+              <div className="flex items-center gap-2"><span role="img" aria-label="Databases">🗄️</span> <span>Robust Databases</span></div>
+            </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <Link href="/contact">
               <button className="tech-gradient px-10 py-5 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300 transform cyber-glow" data-testid="book-call-hero">
-                <Calendar className="inline mr-3 w-6 h-6" />Initialize Contact
+                <Calendar className="inline mr-3 w-6 h-6" />Let's Build Together
               </button>
             </Link>
             <Link href="/projects">
               <button className="terminal-border px-10 py-5 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300 transform glassmorphism hover:cyber-glow" data-testid="view-work-hero">
-                <Code className="inline mr-3 w-6 h-6" />Execute Portfolio
+                <Code className="inline mr-3 w-6 h-6" />See What's Possible
               </button>
             </Link>
           </div>
@@ -62,22 +68,22 @@ export default function HeroSection() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-12">
             <div className="neumorphism p-6 rounded-xl text-center animate-float group hover:cyber-glow transition-all duration-500" data-testid="stat-experience">
               <div className="text-4xl font-bold text-electric-blue mb-2 group-hover:animate-pulse-glow">5+</div>
-              <div className="text-sm text-gray-300 font-mono">Years Elite Experience</div>
+              <div className="text-sm text-gray-300 font-mono">Years Building Partnerships</div>
               <div className="w-full h-1 bg-gradient-to-r from-transparent via-electric-blue to-transparent mt-2 opacity-50"></div>
             </div>
             <div className="neumorphism p-6 rounded-xl text-center animate-float group hover:cyber-glow transition-all duration-500" style={{animationDelay: '0.2s'}} data-testid="stat-projects">
-              <div className="text-4xl font-bold text-neon-cyan mb-2 group-hover:animate-pulse-glow">20+</div>
-              <div className="text-sm text-gray-300 font-mono">Enterprise Solutions</div>
+              <div className="text-4xl font-bold text-neon-cyan mb-2 group-hover:animate-pulse-glow">40+</div>
+              <div className="text-sm text-gray-300 font-mono">Enterprise Wins</div>
               <div className="w-full h-1 bg-gradient-to-r from-transparent via-neon-cyan to-transparent mt-2 opacity-50"></div>
             </div>
             <div className="neumorphism p-6 rounded-xl text-center animate-float group hover:cyber-glow transition-all duration-500" style={{animationDelay: '0.4s'}} data-testid="stat-global">
-              <div className="text-4xl font-bold text-neon-purple mb-2 group-hover:animate-pulse-glow">Global</div>
-              <div className="text-sm text-gray-300 font-mono">Client Network</div>
+              <div className="text-4xl font-bold text-neon-purple mb-2 group-hover:animate-pulse-glow">7</div>
+              <div className="text-sm text-gray-300 font-mono">Countries Conquered</div>
               <div className="w-full h-1 bg-gradient-to-r from-transparent via-neon-purple to-transparent mt-2 opacity-50"></div>
             </div>
             <div className="neumorphism p-6 rounded-xl text-center animate-float group hover:cyber-glow transition-all duration-500" style={{animationDelay: '0.6s'}} data-testid="stat-agile">
-              <div className="text-4xl font-bold text-matrix-green mb-2 group-hover:animate-pulse-glow">Elite</div>
-              <div className="text-sm text-gray-300 font-mono">Architecture</div>
+              <div className="text-4xl font-bold text-matrix-green mb-2 group-hover:animate-pulse-glow">60+</div>
+              <div className="text-sm text-gray-300 font-mono">Projects Delivered</div>
               <div className="w-full h-1 bg-gradient-to-r from-transparent via-matrix-green to-transparent mt-2 opacity-50"></div>
             </div>
           </div>

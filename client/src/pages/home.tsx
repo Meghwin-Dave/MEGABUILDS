@@ -41,50 +41,48 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Custom Software Development. <br />
-              <span className="text-electric-blue">API Integration.</span> {" "}
-              <span className="text-neon-purple">Technical Leadership.</span>
+              Transforming Ideas Into Digital Reality.<br />
+              <span className="text-electric-blue">Seamless Integration.</span> <span className="text-neon-purple">Expert Leadership.</span> <span className="text-matrix-green">Scalable Solutions.</span>
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="neumorphism p-6 rounded-2xl text-center group hover:bg-gray-800/50 transition-all duration-500">
-              <div className="w-16 h-16 bg-gradient-to-br from-electric-blue to-neon-cyan rounded-xl flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-code text-2xl text-white"></i>
-              </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="neumorphism p-6 rounded-2xl text-center group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-blue-400">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-300 rounded-xl flex items-center justify-center mx-auto mb-4 text-3xl">🚀</div>
               <h3 className="text-xl font-bold mb-3">Full-Stack Development</h3>
-              <p className="text-gray-400 text-sm">Scalable web applications with Python/Django and modern frontends</p>
+              <p className="text-gray-400 text-sm">Future-proof web apps with Python/Django & React</p>
             </div>
-
-            <div className="neumorphism p-6 rounded-2xl text-center group hover:bg-gray-800/50 transition-all duration-500">
-              <div className="w-16 h-16 bg-gradient-to-br from-neon-purple to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-plug text-2xl text-white"></i>
-              </div>
+            <div className="neumorphism p-6 rounded-2xl text-center group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-green-400">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-3xl">🔗</div>
               <h3 className="text-xl font-bold mb-3">API Integration</h3>
-              <p className="text-gray-400 text-sm">Payment gateways, CRMs, webhooks, and secure authentication</p>
+              <p className="text-gray-400 text-sm">Connect payments, CRMs, and more—securely</p>
             </div>
-
-            <div className="neumorphism p-6 rounded-2xl text-center group hover:bg-gray-800/50 transition-all duration-500">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-server text-2xl text-white"></i>
-              </div>
+            <div className="neumorphism p-6 rounded-2xl text-center group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-purple-400">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-neon-cyan rounded-xl flex items-center justify-center mx-auto mb-4 text-3xl">⚙️</div>
               <h3 className="text-xl font-bold mb-3">DevOps & Deployment</h3>
-              <p className="text-gray-400 text-sm">CI/CD pipelines, server setup, and production deployment</p>
+              <p className="text-gray-400 text-sm">CI/CD, automated deployments, 24/7 reliability</p>
             </div>
-
-            <div className="neumorphism p-6 rounded-2xl text-center group hover:bg-gray-800/50 transition-all duration-500">
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-users text-2xl text-white"></i>
-              </div>
+            <div className="neumorphism p-6 rounded-2xl text-center group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-orange-400">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-3xl">👥</div>
               <h3 className="text-xl font-bold mb-3">Project Management</h3>
-              <p className="text-gray-400 text-sm">Agile Scrum delivery with technical specs and team leadership</p>
+              <p className="text-gray-400 text-sm">Agile delivery, clear specs, hands-on leadership</p>
+            </div>
+            <div className="neumorphism p-6 rounded-2xl text-center group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-pink-400">
+              <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-purple-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-3xl">🤖</div>
+              <h3 className="text-xl font-bold mb-3">AI Integration</h3>
+              <p className="text-gray-400 text-sm">Smart automation, chatbots, predictive analytics</p>
+            </div>
+            <div className="neumorphism p-6 rounded-2xl text-center group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-yellow-400">
+              <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-300 rounded-xl flex items-center justify-center mx-auto mb-4 text-3xl">📊</div>
+              <h3 className="text-xl font-bold mb-3">Data Analytics</h3>
+              <p className="text-gray-400 text-sm">Dashboards, visualization, actionable insights</p>
             </div>
           </div>
 
           <div className="text-center mt-12">
             <Link href="/services">
               <button className="glassmorphism px-8 py-4 rounded-lg hover:bg-electric-blue/20 transition-colors" data-testid="view-services">
-                <ArrowRight className="inline mr-2 w-5 h-5" />View All Services
+                <ArrowRight className="inline mr-2 w-5 h-5" />Explore My Services
               </button>
             </Link>
           </div>

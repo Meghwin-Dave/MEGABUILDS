@@ -1,11 +1,17 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 
 export default function Navigation() {
   const [location] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    return 'light';
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +21,19 @@ export default function Navigation() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
 
   const navItems = [
     { path: "/", label: "Home" },
@@ -41,7 +60,7 @@ export default function Navigation() {
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -59,6 +78,15 @@ export default function Navigation() {
                 <span className="relative z-10">{item.label}</span>
               </Link>
             ))}
+            {/* Theme Toggle Button */}
+            <button
+              onClick={toggleTheme}
+              className="ml-4 p-2 rounded-full border border-electric-blue/40 bg-dark-secondary hover:bg-dark-tertiary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-electric-blue/60"
+              aria-label="Toggle theme"
+              data-testid="theme-toggle"
+            >
+              {theme === 'dark' ? <Sun size={20} className="text-electric-blue" /> : <Moon size={20} className="text-neon-purple" />}
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,6 +116,15 @@ export default function Navigation() {
                   {item.label}
                 </Link>
               ))}
+              {/* Theme Toggle Button for Mobile */}
+              <button
+                onClick={toggleTheme}
+                className="mt-2 p-2 rounded-full border border-electric-blue/40 bg-dark-secondary hover:bg-dark-tertiary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-electric-blue/60 self-start"
+                aria-label="Toggle theme"
+                data-testid="theme-toggle-mobile"
+              >
+                {theme === 'dark' ? <Sun size={20} className="text-electric-blue" /> : <Moon size={20} className="text-neon-purple" />}
+              </button>
             </div>
           </div>
         )}
