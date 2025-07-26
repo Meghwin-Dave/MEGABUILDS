@@ -15,7 +15,7 @@ export default function TechStack() {
   ];
 
   return (
-    <section className="py-20 bg-dark-secondary relative overflow-hidden" data-testid="tech-stack">
+    <section className="py-20 bg-background relative overflow-hidden text-foreground" data-testid="tech-stack">
       {/* Background circuit pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -28,34 +28,34 @@ export default function TechStack() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             My <span className="text-transparent bg-clip-text tech-gradient">Tech Arsenal</span>
           </h2>
-          <p className="text-gray-400 font-mono">A blend of code, automation, and design</p>
+          <p className="text-muted-foreground font-mono">A blend of code, automation, and design</p>
         </div>
         {/* Grouped Tech Stacks */}
         <div className="space-y-8">
           {/* Frontend Mastery */}
           <div className="glassmorphism p-6 rounded-xl">
             <div className="flex items-center mb-2 text-2xl font-bold"><span role="img" aria-label="frontend" className="mr-2">🚀</span>FRONTEND MASTERY</div>
-            <div className="text-lg text-gray-200 font-mono">React.js - <span className="text-matrix-green">EXPERT</span> | Next.js - <span className="text-warning-orange">ADVANCED</span> | Tailwind CSS - <span className="text-matrix-green">EXPERT</span></div>
+            <div className="text-lg text-foreground font-mono">React.js - <span className="text-matrix-green">EXPERT</span> | Next.js - <span className="text-warning-orange">ADVANCED</span> | Tailwind CSS - <span className="text-matrix-green">EXPERT</span></div>
           </div>
           {/* Backend Power */}
           <div className="glassmorphism p-6 rounded-xl">
             <div className="flex items-center mb-2 text-2xl font-bold"><span role="img" aria-label="backend" className="mr-2">🔧</span>BACKEND POWER</div>
-            <div className="text-lg text-gray-200 font-mono">Python - <span className="text-matrix-green">EXPERT</span> | PostgreSQL - <span className="text-matrix-green">EXPERT</span> | Docker - <span className="text-warning-orange">ADVANCED</span></div>
+            <div className="text-lg text-foreground font-mono">Python - <span className="text-matrix-green">EXPERT</span> | PostgreSQL - <span className="text-matrix-green">EXPERT</span> | Docker - <span className="text-warning-orange">ADVANCED</span></div>
           </div>
           {/* AI & Automation */}
           <div className="glassmorphism p-6 rounded-xl">
             <div className="flex items-center mb-2 text-2xl font-bold"><span role="img" aria-label="ai" className="mr-2">🤖</span>AI & AUTOMATION</div>
-            <div className="text-lg text-gray-200 font-mono">OpenAI - <span className="text-warning-orange">ADVANCED</span> | N8N - <span className="text-matrix-green">EXPERT</span> | Langchain - <span className="text-warning-orange">INTERMEDIATE</span></div>
+            <div className="text-lg text-foreground font-mono">OpenAI - <span className="text-warning-orange">ADVANCED</span> | N8N - <span className="text-matrix-green">EXPERT</span> | Langchain - <span className="text-warning-orange">INTERMEDIATE</span></div>
           </div>
           {/* ERP & Frappe */}
           <div className="glassmorphism p-6 rounded-xl">
             <div className="flex items-center mb-2 text-2xl font-bold"><span role="img" aria-label="erp" className="mr-2">🏢</span>ERPNEXT & FRAPPE</div>
-            <div className="text-lg text-gray-200 font-mono">ERPNext - <span className="text-matrix-green">EXPERT</span> | Frappe - <span className="text-matrix-green">EXPERT</span></div>
+            <div className="text-lg text-foreground font-mono">ERPNext - <span className="text-matrix-green">EXPERT</span> | Frappe - <span className="text-matrix-green">EXPERT</span></div>
           </div>
           {/* Design & Tools */}
           <div className="glassmorphism p-6 rounded-xl">
             <div className="flex items-center mb-2 text-2xl font-bold"><span role="img" aria-label="design" className="mr-2">🎨</span>DESIGN & TOOLS</div>
-            <div className="text-lg text-gray-200 font-mono">Figma - <span className="text-warning-orange">INTERMEDIATE</span> | Git - <span className="text-matrix-green">EXPERT</span></div>
+            <div className="text-lg text-foreground font-mono">Figma - <span className="text-warning-orange">INTERMEDIATE</span> | Git - <span className="text-matrix-green">EXPERT</span></div>
           </div>
         </div>
         {/* Achievement Badges */}

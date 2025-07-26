@@ -68,7 +68,7 @@ export default function Services() {
             <ul className="space-y-4 text-gray-300">
               <li><span className="font-semibold text-white">Technical Team Leadership</span><br /><span className="text-sm">Drive projects to success with Agile methodologies, clear technical specifications, and hands-on leadership that delivers results on time.</span></li>
             </ul>
-          </div>
+        </div>
 
           {/* AI Integration */}
           <div className="neumorphism p-8 rounded-2xl group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-pink-400">
@@ -79,7 +79,7 @@ export default function Services() {
             <ul className="space-y-4 text-gray-300">
               <li><span className="font-semibold text-white">Smart Automation & ML</span><br /><span className="text-sm">Integrate AI and machine learning for smarter workflows, chatbots, and predictive analytics that drive business value.</span></li>
             </ul>
-          </div>
+            </div>
 
           {/* Data Analytics */}
           <div className="neumorphism p-8 rounded-2xl group hover:scale-105 hover:shadow-2xl transition-all duration-500 border-t-4 border-yellow-400">

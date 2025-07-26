@@ -65,30 +65,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="text-sm text-gray-400">
           <span className="font-semibold text-green-400">Result:</span> {project.result}
         </div>
-        <div className="flex gap-2">
-          {project.codeUrl && (
-            <a 
-              href={project.codeUrl} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="glassmorphism px-4 py-2 rounded-lg text-sm hover:bg-electric-blue/20 transition-colors"
-              data-testid={`project-code-${project.slug}`}
-            >
-              <Github className="inline mr-2 w-4 h-4" />View Code
-            </a>
-          )}
-          {project.liveUrl && (
-            <a 
-              href={project.liveUrl} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="glassmorphism px-4 py-2 rounded-lg text-sm hover:bg-electric-blue/20 transition-colors"
-              data-testid={`project-demo-${project.slug}`}
-            >
-              <ExternalLink className="inline mr-2 w-4 h-4" />Live Demo
-            </a>
-          )}
-        </div>
       </div>
     </div>
   );

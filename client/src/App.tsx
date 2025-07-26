@@ -12,10 +12,18 @@ import Blog from "@/pages/blog";
 import Contact from "@/pages/contact";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import DjangoPerformanceArticle from "@/pages/blog/django-performance";
+import ReactStateManagementArticle from "@/pages/blog/react-state-management";
+import ChatGPTDashboardsArticle from "@/pages/blog/chatgpt-dashboards";
+import ZeroDowntimeDockerArticle from "@/pages/blog/zero-downtime-docker";
+import CodeReviewsQualityArticle from "@/pages/blog/code-reviews-quality";
+import RestfulApiVersioningArticle from "@/pages/blog/restful-api-versioning";
 
 function Router() {
   return (
-    <div className="min-h-screen bg-dark text-white">
+    <div className="min-h-screen bg-background text-foreground">
+      <ScrollToTop />
       <Navigation />
       <Switch>
         <Route path="/" component={Home} />
@@ -23,6 +31,12 @@ function Router() {
         <Route path="/projects" component={Projects} />
         <Route path="/about" component={About} />
         <Route path="/blog" component={Blog} />
+        <Route path="/blog/django-performance" component={DjangoPerformanceArticle} />
+        <Route path="/blog/react-state-management" component={ReactStateManagementArticle} />
+        <Route path="/blog/chatgpt-dashboards" component={ChatGPTDashboardsArticle} />
+        <Route path="/blog/zero-downtime-docker" component={ZeroDowntimeDockerArticle} />
+        <Route path="/blog/code-reviews-quality" component={CodeReviewsQualityArticle} />
+        <Route path="/blog/restful-api-versioning" component={RestfulApiVersioningArticle} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
@@ -31,15 +45,15 @@ function Router() {
   );
 }
 
-function App() {
+export default function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Router />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <div className="min-h-screen bg-background text-foreground">
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Router />
+        </TooltipProvider>
+      </QueryClientProvider>
+    </div>
   );
 }
-
-export default App;

@@ -3,6 +3,7 @@ import { type BlogPost } from "@shared/schema";
 import BlogCard from "@/components/blog-card";
 import { BookOpen, Search } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 
 export default function Blog() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -53,17 +54,15 @@ export default function Blog() {
             <span className="text-sm text-yellow-400 font-bold ml-2">Featured</span>
           </div>
           <div className="neumorphism p-8 rounded-2xl max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Building Systems That Scale: Lessons from 50+ Production Deployments</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              <Link href="/blog/django-performance" className="hover:underline text-foreground">Building Systems That Scale: Lessons from 50+ Production Deployments</Link>
+            </h2>
             <p className="text-gray-300 mb-4">The hidden complexities of scaling beyond 10,000 users — from database bottlenecks to API design patterns that actually work in the real world.</p>
             <div className="text-gray-400 mb-4">Key topics: Microservices vs Monoliths • Database Sharding • Caching Strategies • Load Balancing</div>
-            <div className="flex flex-wrap gap-4 mb-4 text-sm">
-              <span className="flex items-center gap-1"><span className="text-xl">👁️</span>2,847 views</span>
-              <span className="flex items-center gap-1"><span className="text-xl">💬</span>23 comments</span>
-              <span className="flex items-center gap-1"><span className="text-xl">⭐</span>4.8/5 rating</span>
-            </div>
             <div className="flex gap-4">
-              <button className="tech-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">Read Article</button>
-              <button className="glassmorphism px-6 py-3 rounded-lg hover:bg-electric-blue/20 transition-colors">Join Discussion</button>
+              <Link href="/blog/django-performance">
+                <button className="tech-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">Read Article</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -84,53 +83,65 @@ export default function Blog() {
         </div>
 
         {/* Recent Articles (Expanded) */}
-        <div className="mb-16">
+          <div className="mb-16">
           <h2 className="text-2xl font-bold text-center mb-8">Recent Articles</h2>
           <div className="space-y-8 max-w-4xl mx-auto">
             <div className="neumorphism p-6 rounded-xl">
               <div className="flex items-center gap-2 mb-2"><span>🐍</span>Python • 12 min read • <span className="text-yellow-400 font-bold">Popular</span></div>
-              <h3 className="text-xl font-bold mb-2">Django Performance: From 2s to 200ms Response Times</h3>
+              <h3 className="text-xl font-bold mb-2">
+                <Link href="/blog/django-performance" className="hover:underline text-foreground">Django Performance: From 2s to 200ms Response Times</Link>
+              </h3>
               <p className="text-gray-300 mb-2">How I optimized a Django API serving 1M+ requests daily through strategic caching, query optimization, and smart architecture decisions.</p>
               <div className="text-gray-400 mb-2">📈 Performance gains: 90% faster • Database queries: 85% reduction</div>
               <div className="text-gray-400 mb-2">👁️ 4,231 views • July 20, 2025</div>
             </div>
             <div className="neumorphism p-6 rounded-xl">
               <div className="flex items-center gap-2 mb-2"><span>⚛️</span>React • 6 min read • <span className="text-pink-400 font-bold">Trending</span></div>
-              <h3 className="text-xl font-bold mb-2">React State Management: When Context Isn't Enough</h3>
+              <h3 className="text-xl font-bold mb-2">
+                <Link href="/blog/react-state-management" className="hover:underline text-foreground">React State Management: When Context Isn't Enough</Link>
+              </h3>
               <p className="text-gray-300 mb-2">Battle-tested patterns for managing complex state in large React applications without Redux bloat or performance penalties.</p>
               <div className="text-gray-400 mb-2">🔧 Code examples • Live demos • Production insights</div>
               <div className="text-gray-400 mb-2">👁️ 3,156 views • July 18, 2025</div>
             </div>
             <div className="neumorphism p-6 rounded-xl">
               <div className="flex items-center gap-2 mb-2"><span>🤖</span>AI Integration • 10 min read • <span className="text-matrix-green font-bold">New</span></div>
-              <h3 className="text-xl font-bold mb-2">Building ChatGPT-Powered Dashboards That Actually Add Value</h3>
+              <h3 className="text-xl font-bold mb-2">
+                <Link href="/blog/chatgpt-dashboards" className="hover:underline text-foreground">Building ChatGPT-Powered Dashboards That Actually Add Value</Link>
+              </h3>
               <p className="text-gray-300 mb-2">Moving beyond basic chatbots to create AI interfaces that transform business intelligence and user experience.</p>
               <div className="text-gray-400 mb-2">💡 Real use cases • Cost optimization • User adoption strategies</div>
               <div className="text-gray-400 mb-2">👁️ 1,892 views • July 15, 2025</div>
             </div>
             <div className="neumorphism p-6 rounded-xl">
               <div className="flex items-center gap-2 mb-2"><span>🚀</span>DevOps • 8 min read</div>
-              <h3 className="text-xl font-bold mb-2">Zero-Downtime Deployments with Docker and Blue-Green Strategy</h3>
+              <h3 className="text-xl font-bold mb-2">
+                <Link href="/blog/zero-downtime-docker" className="hover:underline text-foreground">Zero-Downtime Deployments with Docker and Blue-Green Strategy</Link>
+              </h3>
               <p className="text-gray-300 mb-2">Production-tested deployment patterns that ensure reliability while enabling continuous delivery for mission-critical applications.</p>
               <div className="text-gray-400 mb-2">🛠️ Docker configs • Automation scripts • Monitoring setup</div>
               <div className="text-gray-400 mb-2">👁️ 2,647 views • July 12, 2025</div>
             </div>
             <div className="neumorphism p-6 rounded-xl">
               <div className="flex items-center gap-2 mb-2"><span>👥</span>Leadership • 7 min read</div>
-              <h3 className="text-xl font-bold mb-2">Code Reviews That Actually Improve Code Quality</h3>
+              <h3 className="text-xl font-bold mb-2">
+                <Link href="/blog/code-reviews-quality" className="hover:underline text-foreground">Code Reviews That Actually Improve Code Quality</Link>
+              </h3>
               <p className="text-gray-300 mb-2">Transform your code review process from gatekeeping to knowledge sharing with practices that accelerate team growth.</p>
               <div className="text-gray-400 mb-2">📋 Review checklists • Team dynamics • Quality metrics</div>
               <div className="text-gray-400 mb-2">👁️ 1,534 views • July 8, 2025</div>
             </div>
             <div className="neumorphism p-6 rounded-xl">
               <div className="flex items-center gap-2 mb-2"><span>🔗</span>API Design • 9 min read</div>
-              <h3 className="text-xl font-bold mb-2">RESTful APIs That Don't Break: Versioning and Evolution Strategies</h3>
+              <h3 className="text-xl font-bold mb-2">
+                <Link href="/blog/restful-api-versioning" className="hover:underline text-foreground">RESTful APIs That Don't Break: Versioning and Evolution Strategies</Link>
+              </h3>
               <p className="text-gray-300 mb-2">Design APIs that can evolve without breaking existing clients — lessons from managing 20+ production APIs over 3+ years.</p>
               <div className="text-gray-400 mb-2">📚 Versioning patterns • Backward compatibility • Documentation</div>
               <div className="text-gray-400 mb-2">👁️ 2,108 views • July 5, 2025</div>
             </div>
-          </div>
-        </div>
+                </div>
+                  </div>
 
         {/* Popular Series */}
         <div className="mb-16">
@@ -142,8 +153,8 @@ export default function Blog() {
             <div className="flex flex-wrap gap-4 text-sm">
               <span className="flex items-center gap-1"><span className="text-xl">📊</span>25,000+ total views</span>
               <span className="flex items-center gap-1"><span className="text-xl">⭐</span>4.9/5 series rating</span>
-            </div>
-          </div>
+                </div>
+              </div>
           <div className="neumorphism p-8 rounded-2xl max-w-4xl mx-auto">
             <h3 className="text-xl font-bold mb-2">Python to Production (6-part series)</h3>
             <div className="text-gray-300 mb-2">Complete guide to taking Python applications from development to production-ready deployments.</div>
@@ -222,68 +233,18 @@ export default function Blog() {
               <li>✅ Early access to new articles and exclusive content</li>
             </ul>
             <div className="mb-4 text-gray-400">Recent issue: "Why Your API Design is Probably Wrong (And How to Fix It)"<br />Next issue: "Database Scaling: When to Shard, When to Replicate"</div>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="glassmorphism flex-1 px-4 py-3 rounded-lg bg-dark-tertiary text-white placeholder-gray-400 focus:ring-2 focus:ring-electric-blue border-0"
-                data-testid="newsletter-email"
-              />
-              <button className="tech-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity whitespace-nowrap" data-testid="newsletter-subscribe">
+          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="glassmorphism flex-1 px-4 py-3 rounded-lg bg-dark-tertiary text-white placeholder-gray-400 focus:ring-2 focus:ring-electric-blue border-0"
+              data-testid="newsletter-email"
+            />
+            <button className="tech-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity whitespace-nowrap" data-testid="newsletter-subscribe">
                 Subscribe for Free
-              </button>
+            </button>
             </div>
             <div className="text-xs text-gray-500 mt-2">No spam, unsubscribe anytime • 1 email/week</div>
-          </div>
-        </div>
-
-        {/* Community Section */}
-        <div className="mb-16">
-          <h2 className="text-2xl font-bold text-center mb-8">💬 Developer Community</h2>
-          <div className="neumorphism p-8 rounded-2xl max-w-4xl mx-auto text-center">
-            <div className="mb-4 text-gray-300">Join the Discussion:</div>
-            <ul className="text-gray-300 mb-4">
-              <li>• Discord Server: 500+ active developers</li>
-              <li>• LinkedIn Group: 1,200+ tech professionals</li>
-              <li>• Weekly AMAs: Every Friday 3 PM IST</li>
-              <li>• Code Reviews: Community feedback on projects</li>
-            </ul>
-            <div className="mb-4 text-gray-400">Recent Discussions:</div>
-            <ul className="text-gray-400 mb-4">
-              <li>🔥 "Best practices for handling async operations in Django" (47 replies)</li>
-              <li>🔥 "Microservices: When did complexity outweigh benefits?" (31 replies)</li>
-              <li>🔥 "AI tools changing the hiring landscape?" (23 replies)</li>
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="tech-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">Join Community</button>
-              <button className="glassmorphism px-6 py-3 rounded-lg hover:bg-electric-blue/20 transition-colors">Start Discussion</button>
-            </div>
-          </div>
-        </div>
-
-        {/* Tools & Resources */}
-        <div className="mb-16">
-          <h2 className="text-2xl font-bold text-center mb-8">🛠️ Developer Resources</h2>
-          <div className="neumorphism p-8 rounded-2xl max-w-4xl mx-auto text-center">
-            <div className="mb-4 text-gray-300">Free Tools & Templates:</div>
-            <ul className="text-gray-300 mb-4">
-              <li>📋 Django API Starter Template (1.2k+ downloads)</li>
-              <li>🐳 Docker Development Environment (890+ downloads)</li>
-              <li>📊 System Architecture Templates (2.1k+ downloads)</li>
-              <li>🔄 CI/CD Pipeline Configs (670+ downloads)</li>
-              <li>📈 Performance Monitoring Setup (445+ downloads)</li>
-            </ul>
-            <div className="mb-4 text-gray-400">Code Examples Repository:<br />GitHub: /meghwin-dev/blog-examples</div>
-            <ul className="text-gray-400 mb-4">
-              <li>• All article code samples</li>
-              <li>• Production-ready templates</li>
-              <li>• Step-by-step implementations</li>
-              <li>• Community contributions welcome</li>
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="tech-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">Browse Resources</button>
-              <button className="glassmorphism px-6 py-3 rounded-lg hover:bg-electric-blue/20 transition-colors">Contribute</button>
-            </div>
           </div>
         </div>
 

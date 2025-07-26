@@ -31,8 +31,8 @@ export default function Contact() {
               <button className="tech-gradient px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity">Schedule Free Consultation</button>
               <button className="glassmorphism px-8 py-4 rounded-lg hover:bg-electric-blue/20 transition-colors">Send Message</button>
             </div>
-          </div>
-        </div>
+                </div>
+              </div>
 
         {/* Contact Methods (Restructured) */}
         <div className="mb-20">
@@ -46,7 +46,7 @@ export default function Contact() {
                 <li>💼 LinkedIn: Direct professional connection</li>
                 <li>📅 Calendar: Book a free 30-minute consultation</li>
               </ul>
-            </div>
+                </div>
             <div className="glassmorphism p-6 rounded-xl">
               <h3 className="font-bold mb-2">🌍 Global Availability</h3>
               <ul className="text-gray-300 mb-2">
@@ -57,9 +57,9 @@ export default function Contact() {
               </ul>
               <h3 className="font-bold mt-4 mb-2">🚨 Urgent Projects</h3>
               <div className="text-gray-300">For time-sensitive projects, WhatsApp or direct call gets fastest response.</div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
         {/* Why Choose Me Section (Enhanced) */}
         <div className="mb-20">
@@ -82,7 +82,7 @@ export default function Contact() {
                 <li>Scalable architecture (10K+ concurrent users)</li>
                 <li>Security-first approach (Enterprise-grade)</li>
               </ul>
-            </div>
+                </div>
             <div className="neumorphism p-6 rounded-xl">
               <h3 className="font-bold mb-2">✅ Global Experience</h3>
               <ul className="text-gray-300">
@@ -91,7 +91,7 @@ export default function Contact() {
                 <li>Cultural sensitivity and communication</li>
                 <li>Onsite experience in Saudi Arabia</li>
               </ul>
-            </div>
+                </div>
             <div className="neumorphism p-6 rounded-xl">
               <h3 className="font-bold mb-2">✅ Business-Focused Approach</h3>
               <ul className="text-gray-300">
@@ -100,7 +100,7 @@ export default function Contact() {
                 <li>Post-launch optimization and support</li>
                 <li>Long-term partnership mindset</li>
               </ul>
-            </div>
+                </div>
             <div className="neumorphism p-6 rounded-xl">
               <h3 className="font-bold mb-2">✅ Transparent Process</h3>
               <ul className="text-gray-300">
@@ -109,9 +109,9 @@ export default function Contact() {
                 <li>Real-time project tracking dashboard</li>
                 <li>No hidden costs or surprise charges</li>
               </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
         {/* Current Availability Dashboard */}
         <div className="mb-20">
@@ -119,18 +119,9 @@ export default function Contact() {
           <div className="neumorphism p-8 rounded-2xl max-w-3xl mx-auto">
             <div className="mb-4">
               <span className="text-green-400 font-bold">🟢 New Projects: ACCEPTING (2 slots available)</span><br />
-              <span className="text-yellow-400 font-bold">🟡 Consultations: OPEN (Next available: Tomorrow 2 PM IST)</span><br />
               <span className="text-green-400 font-bold">🟢 Response Time: 12-24 hours average</span><br />
               <span className="text-green-400 font-bold">🟢 Emergency Support: Available for existing clients</span>
-            </div>
-            <div className="mb-4">
-              <div className="font-bold mb-2">📅 Upcoming Schedule</div>
-              <ul className="text-gray-300">
-                <li>This Week: 2 consultation slots open</li>
-                <li>Next Month: 1 major project slot available</li>
-                <li>Q4 2025: Booking for enterprise projects</li>
-              </ul>
-            </div>
+                </div>
             <div className="mb-4">
               <div className="font-bold mb-2">⏰ Response Time Guarantee</div>
               <ul className="text-gray-300">
@@ -138,11 +129,7 @@ export default function Contact() {
                 <li>Urgent questions: Within 4 hours</li>
                 <li>Emergency issues: Within 1 hour (existing clients)</li>
               </ul>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="tech-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">Check Real-Time Calendar</button>
-              <button className="glassmorphism px-6 py-3 rounded-lg hover:bg-electric-blue/20 transition-colors">Book Immediate Consultation</button>
-            </div>
+                </div>
           </div>
         </div>
 
@@ -162,10 +149,6 @@ export default function Contact() {
               <div className="text-gray-300 mb-4">"Working across 12-hour time difference was seamless. His communication and project management skills are exceptional."</div>
               <div className="text-sm text-gray-400 font-semibold">— Maria Rodriguez, Product Manager at RetailNext</div>
             </div>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <button className="tech-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">View Full Case Studies</button>
-            <button className="glassmorphism px-6 py-3 rounded-lg hover:bg-electric-blue/20 transition-colors">Read More Testimonials</button>
           </div>
         </div>
 
@@ -200,10 +183,6 @@ export default function Contact() {
               <p className="text-gray-300 mb-2"><b>Q:</b> How do you handle different time zones?</p>
               <p className="text-gray-400">A: With experience across 7 countries, I offer: Flexible working hours (4-hour overlap minimum) • Asynchronous communication with daily updates • Weekend availability for urgent issues • Clear milestone tracking and reporting</p>
             </div>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <button className="tech-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">Ask a New Question</button>
-            <button className="glassmorphism px-6 py-3 rounded-lg hover:bg-electric-blue/20 transition-colors">Schedule Technical Discussion</button>
           </div>
         </div>
 
@@ -251,13 +230,6 @@ export default function Contact() {
               <li>• Team collaboration and communication plan</li>
               <li>• Next steps and proposal delivery</li>
             </ul>
-            <div className="mb-4 font-bold">🗓️ Available Slots This Week:</div>
-            <ul className="text-gray-300 mb-4">
-              <li>• Tuesday, July 26: 2:00 PM IST | 10:30 AM CET</li>
-              <li>• Wednesday, July 27: 10:00 AM IST | 6:30 AM CET</li>
-              <li>• Thursday, July 28: 4:00 PM IST | 12:30 PM CET</li>
-              <li>• Friday, July 29: 11:00 AM IST | 7:30 AM CET</li>
-            </ul>
             <div className="mb-4 font-bold">💼 Preparation (Optional):</div>
             <ul className="text-gray-300 mb-4">
               <li>• Brief project overview document</li>
@@ -265,11 +237,6 @@ export default function Contact() {
               <li>• List of key stakeholders and requirements</li>
               <li>• Ideal timeline and budget parameters</li>
             </ul>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="tech-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">Book Consultation Now</button>
-              <button className="glassmorphism px-6 py-3 rounded-lg hover:bg-electric-blue/20 transition-colors">Request Custom Time</button>
-              <button className="glassmorphism px-6 py-3 rounded-lg hover:bg-electric-blue/20 transition-colors">Send Project Brief First</button>
-            </div>
           </div>
         </div>
 
@@ -288,7 +255,7 @@ export default function Contact() {
             <ul className="text-gray-300 mb-4">
               <li>• 25% premium for projects under 4 weeks</li>
               <li>• 50% premium for weekend/holiday work</li>
-              <li>• Emergency fixes: $200/hour (existing clients)</li>
+              <li>• Emergency fixes: $100/hour (existing clients)</li>
             </ul>
             <div className="mb-4 font-bold">Qualification Criteria:</div>
             <ul className="text-gray-300 mb-4">

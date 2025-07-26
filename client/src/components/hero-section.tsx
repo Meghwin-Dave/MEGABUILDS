@@ -3,8 +3,8 @@ import { Calendar, Code, ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative particle-bg overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark-secondary to-dark-tertiary opacity-95"></div>
+    <section className="min-h-screen flex items-center justify-center relative particle-bg overflow-hidden bg-background text-foreground">
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-muted to-muted opacity-95"></div>
       
       {/* Cyber grid overlay */}
       <div className="absolute inset-0 opacity-20">
@@ -26,8 +26,8 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           {/* Code snippet decoration */}
-          <div className="inline-block mb-4 px-4 py-2 terminal-border rounded-lg bg-dark-tertiary font-mono text-sm text-matrix-green">
-            <span className="text-neon-cyan">const</span> <span className="text-white">developer</span> = <span className="text-yellow-400">"Meghwin Dave"</span>;
+          <div className="inline-block mb-4 px-4 py-2 terminal-border rounded-lg bg-muted font-mono text-sm text-matrix-green">
+            <span className="text-neon-cyan">const</span> <span className="text-foreground">developer</span> = <span className="text-yellow-400">"Meghwin Dave"</span>;
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" data-testid="hero-title">
@@ -39,7 +39,7 @@ export default function HeroSection() {
           {/* Add extra margin below headline to prevent overlap */}
           <div className="mb-10"></div>
           <div className="glassmorphism p-6 rounded-2xl mb-8 max-w-4xl mx-auto">
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed text-center mb-4" data-testid="hero-subtitle">
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed text-center mb-4" data-testid="hero-subtitle">
               Every project powered by:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">

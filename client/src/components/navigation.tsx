@@ -78,15 +78,6 @@ export default function Navigation() {
                 <span className="relative z-10">{item.label}</span>
               </Link>
             ))}
-            {/* Theme Toggle Button */}
-            <button
-              onClick={toggleTheme}
-              className="ml-4 p-2 rounded-full border border-electric-blue/40 bg-dark-secondary hover:bg-dark-tertiary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-electric-blue/60"
-              aria-label="Toggle theme"
-              data-testid="theme-toggle"
-            >
-              {theme === 'dark' ? <Sun size={20} className="text-electric-blue" /> : <Moon size={20} className="text-neon-purple" />}
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -117,14 +108,6 @@ export default function Navigation() {
                 </Link>
               ))}
               {/* Theme Toggle Button for Mobile */}
-              <button
-                onClick={toggleTheme}
-                className="mt-2 p-2 rounded-full border border-electric-blue/40 bg-dark-secondary hover:bg-dark-tertiary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-electric-blue/60 self-start"
-                aria-label="Toggle theme"
-                data-testid="theme-toggle-mobile"
-              >
-                {theme === 'dark' ? <Sun size={20} className="text-electric-blue" /> : <Moon size={20} className="text-neon-purple" />}
-              </button>
             </div>
           </div>
         )}
